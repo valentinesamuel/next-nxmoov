@@ -13,9 +13,10 @@ const Kanban = () => {
         <MobileView />
       </Flex>
       <Flex display={["none", "none", "flex", "none"]}>tablet</Flex>
-      <Flex display={["none", "none", "none", "flex"]}>
-        <DesktopView />
-      </Flex>
+      <Box display={["none", "none", "none", "block"]}>
+        <DesktopView columns={columns}/>
+ 
+      </Box>
     </Box>
   );
 };
